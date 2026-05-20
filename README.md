@@ -1,6 +1,6 @@
 # Meeting Notes Action Lab
 
-Public Fox & Hen working sample for **Meeting-to-action workflow**.
+Public Fox & Hen working sample for a **meeting-to-action workflow**.
 
 ![Demo screenshot](docs/demo-screenshot.png)
 
@@ -9,13 +9,28 @@ Public Fox & Hen working sample for **Meeting-to-action workflow**.
 - Demo: [https://foxhen-meeting-notes-action-lab.vercel.app](https://foxhen-meeting-notes-action-lab.vercel.app)
 - Repository: [https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab](https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab)
 
+## What This Demo Is
+
+Meeting Notes Action Lab is a forkable React/Vite operating tool for teams that want to extract decisions, owners, blockers, deadlines, and executive summaries from fictional meeting notes. It is intentionally small, static, and public-safe so you can copy the pattern without inheriting a backend or vendor lock-in.
+
 ## Fully Working Behaviors
 
-- Search, filter, and sort the sample work board.
-- Add a new sample item and edit owner, notes, priority, value, effort, and friction.
-- Advance work status and watch readiness metrics update.
-- Run the 24-hour sprint simulation to reprioritize high-value items.
-- Toggle QA gates, generate a handoff report, and download the current board as JSON.
+- Search, filter, and sort a domain-specific workflow board.
+- Add a fictional item and edit owner, notes, priority, value, effort, and friction.
+- Advance status and watch readiness metrics update in real time.
+- Run a 24-hour sprint simulation to reduce friction on the highest-scoring work.
+- Toggle QA gates, generate a handoff report, and download the board as JSON.
+
+## Workflow Template
+
+See [docs/workflow-template.md](docs/workflow-template.md) for the sample notes-to-action register, adaptation checklist, and public-safe data rules.
+
+## Suggested Forks
+
+- Paste sanitized notes into item notes or import as cards.
+- Score priority by executive urgency and value by decision impact.
+- Use checks as follow-up completeness gates.
+- Export JSON before sending the post-meeting action recap.
 
 ## Local Run
 

@@ -129,41 +129,41 @@ export const sample: {
     }
   ],
   "checks": [
-    {
-      "id": "payer",
-      "label": "Payer or owner is clear",
-      "passed": true,
-      "weight": 18
-    },
-    {
-      "id": "deliverable",
-      "label": "Deliverable has acceptance criteria",
-      "passed": true,
-      "weight": 18
-    },
-    {
-      "id": "friction",
-      "label": "Account/access friction is documented",
-      "passed": false,
-      "weight": 14
-    },
-    {
-      "id": "handoff",
-      "label": "Handoff package is generated",
-      "passed": false,
-      "weight": 16
-    },
-    {
-      "id": "reuse",
-      "label": "Repeatable pipeline note exists",
-      "passed": true,
-      "weight": 12
-    }
+      {
+          "id": "owner",
+          "label": "Action owner and decision maker are clear",
+          "passed": true,
+          "weight": 18
+      },
+      {
+          "id": "criteria",
+          "label": "Decision/action acceptance criteria are written",
+          "passed": true,
+          "weight": 18
+      },
+      {
+          "id": "blockers",
+          "label": "Date conflicts and blockers are documented",
+          "passed": false,
+          "weight": 14
+      },
+      {
+          "id": "handoff",
+          "label": "Follow-up recap package is generated",
+          "passed": false,
+          "weight": 16
+      },
+      {
+          "id": "reuse",
+          "label": "Reusable meeting recap note exists",
+          "passed": true,
+          "weight": 12
+      }
   ],
   "deliverables": [
-    "Ranked board",
-    "Editable item inspector",
-    "Readiness checklist",
-    "Exportable handoff report"
+      "Decision and action register",
+      "Editable meeting item inspector",
+      "Follow-up readiness checklist",
+      "Exportable action recap"
   ]
 };
