@@ -1,12 +1,44 @@
-export const sample = {
+export type ItemStatus = "backlog" | "active" | "blocked" | "ready" | "done";
+
+export type WorkItem = {
+  id: string;
+  title: string;
+  category: string;
+  owner: string;
+  status: ItemStatus;
+  priority: number;
+  effort: number;
+  friction: number;
+  value: number;
+  due: string;
+  notes: string;
+};
+
+export type QualityCheck = {
+  id: string;
+  label: string;
+  passed: boolean;
+  weight: number;
+};
+
+export const sample: {
+  repoName: string;
+  title: string;
+  subtitle: string;
+  serviceLine: string;
+  description: string;
+  repositoryUrl: string;
+  liveDemoUrl: string;
+  theme: { accent: string; accent2: string; ink: string; soft: string; warm: string };
+  items: WorkItem[];
+  checks: QualityCheck[];
+  deliverables: string[];
+} = {
   "repoName": "foxhen-meeting-notes-action-lab",
   "title": "Meeting Notes Action Lab",
-  "subtitle": "Notes converted into accountable work",
+  "subtitle": "action register",
   "serviceLine": "Meeting-to-action workflow",
-  "heroTitle": "Turn messy notes into decisions, owners, and next steps.",
-  "heroCopy": "A sample action lab that parses fictional meeting notes into decisions, blockers, owners, dates, and an executive handoff summary.",
-  "primaryAction": "Extract actions",
-  "secondaryAction": "Build summary",
+  "description": "Extract decisions, owners, blockers, deadlines, and executive summaries from fictional notes.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab",
   "liveDemoUrl": "https://foxhen-meeting-notes-action-lab.vercel.app",
   "theme": {
@@ -14,115 +46,124 @@ export const sample = {
     "accent2": "#f1c65c",
     "ink": "#151107",
     "soft": "#faf4df",
-    "warm": "#fff8e2",
-    "surface": "#fffaf4",
-    "muted": "#5c667a",
-    "border": "rgba(7, 18, 31, 0.12)"
+    "warm": "#fff8e2"
   },
-  "metrics": [
+  "items": [
     {
-      "label": "Actions found",
-      "value": "22",
-      "note": "owner mapped"
-    },
-    {
-      "label": "Open blockers",
-      "value": "5",
-      "note": "visible"
-    },
-    {
-      "label": "Decision clarity",
-      "value": "93%",
-      "note": "+37 pts"
-    }
-  ],
-  "stages": [
-    {
-      "label": "Capture",
-      "detail": "Collect raw notes and separate facts, decisions, questions, and loose ideas.",
-      "status": "ready",
-      "owner": "Notes",
-      "index": 1
-    },
-    {
-      "label": "Extract",
-      "detail": "Identify owner, verb, deadline, dependency, and evidence for each action.",
-      "status": "active",
-      "owner": "AI",
-      "index": 2
-    },
-    {
-      "label": "Validate",
-      "detail": "Flag ambiguous owners and dates for human review.",
-      "status": "waiting",
-      "owner": "Chris",
-      "index": 3
-    },
-    {
-      "label": "Package",
-      "detail": "Produce a clean summary and follow-up checklist.",
-      "status": "queued",
-      "owner": "Studio",
-      "index": 4
-    }
-  ],
-  "workItems": [
-    {
+      "id": "mee-1",
       "title": "Decision log",
-      "detail": "Group final choices by topic",
-      "status": "ready"
+      "category": "Intake",
+      "owner": "Chris",
+      "status": "active",
+      "priority": 5,
+      "effort": 2,
+      "friction": 1,
+      "value": 5,
+      "due": "Today",
+      "notes": "Sample action register work item for meeting-to-action workflow."
     },
     {
-      "title": "Action owners",
-      "detail": "Assign named owners or flag gaps",
-      "status": "active"
+      "id": "mee-2",
+      "title": "Action owner",
+      "category": "Build",
+      "owner": "Fox & Hen",
+      "status": "backlog",
+      "priority": 4,
+      "effort": 4,
+      "friction": 2,
+      "value": 4,
+      "due": "24h",
+      "notes": "Sample action register work item for meeting-to-action workflow."
     },
     {
-      "title": "Date conflicts",
-      "detail": "Waiting on schedule confirmation",
-      "status": "waiting"
+      "id": "mee-3",
+      "title": "Date conflict",
+      "category": "Review",
+      "owner": "Buyer",
+      "status": "blocked",
+      "priority": 3,
+      "effort": 3,
+      "friction": 4,
+      "value": 4,
+      "due": "48h",
+      "notes": "Sample action register work item for meeting-to-action workflow."
     },
     {
-      "title": "Summary memo",
-      "detail": "Queued for final packaging",
-      "status": "queued"
+      "id": "mee-4",
+      "title": "Blocker list",
+      "category": "Export",
+      "owner": "Automation",
+      "status": "ready",
+      "priority": 4,
+      "effort": 2,
+      "friction": 2,
+      "value": 3,
+      "due": "This week",
+      "notes": "Sample action register work item for meeting-to-action workflow."
+    },
+    {
+      "id": "mee-5",
+      "title": "Exec summary",
+      "category": "Intake",
+      "owner": "QA",
+      "status": "backlog",
+      "priority": 2,
+      "effort": 1,
+      "friction": 1,
+      "value": 3,
+      "due": "Waiting",
+      "notes": "Sample action register work item for meeting-to-action workflow."
+    },
+    {
+      "id": "mee-6",
+      "title": "Follow-up kit",
+      "category": "Build",
+      "owner": "Chris",
+      "status": "done",
+      "priority": 5,
+      "effort": 5,
+      "friction": 3,
+      "value": 5,
+      "due": "Next pass",
+      "notes": "Sample action register work item for meeting-to-action workflow."
+    }
+  ],
+  "checks": [
+    {
+      "id": "payer",
+      "label": "Payer or owner is clear",
+      "passed": true,
+      "weight": 18
+    },
+    {
+      "id": "deliverable",
+      "label": "Deliverable has acceptance criteria",
+      "passed": true,
+      "weight": 18
+    },
+    {
+      "id": "friction",
+      "label": "Account/access friction is documented",
+      "passed": false,
+      "weight": 14
+    },
+    {
+      "id": "handoff",
+      "label": "Handoff package is generated",
+      "passed": false,
+      "weight": 16
+    },
+    {
+      "id": "reuse",
+      "label": "Repeatable pipeline note exists",
+      "passed": true,
+      "weight": 12
     }
   ],
   "deliverables": [
-    {
-      "title": "Action register",
-      "detail": "Owner/date/dependency rows ready for project tracking."
-    },
-    {
-      "title": "Decision digest",
-      "detail": "A concise executive-readable summary."
-    },
-    {
-      "title": "Follow-up kit",
-      "detail": "Questions and next steps for the meeting owner."
-    }
-  ],
-  "timeline": [
-    {
-      "time": "0-1 hr",
-      "detail": "Normalize notes and topics"
-    },
-    {
-      "time": "1-3 hrs",
-      "detail": "Extract actions and decisions"
-    },
-    {
-      "time": "3-5 hrs",
-      "detail": "Human review and handoff pack"
-    }
-  ],
-  "proof": [
-    "A fast AI workflow setup sample with obvious ROI.",
-    "Shows how automation supports, rather than replaces, follow-up.",
-    "No real meetings or contacts are included."
+    "Ranked board",
+    "Editable item inspector",
+    "Readiness checklist",
+    "Exportable handoff report"
   ]
-} as const;
-
-export type StageStatus = "ready" | "active" | "waiting" | "queued";
-export type DemoStage = (typeof sample.stages)[number];
-export type WorkItem = (typeof sample.workItems)[number];
+};
