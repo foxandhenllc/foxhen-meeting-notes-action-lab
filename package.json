@@ -25,12 +25,27 @@
   "description": "Meeting notes action tracker for extracting decisions, owners, blockers, due dates, and follow-up summaries.",
   "homepage": "https://foxhen-meeting-notes-action-lab.vercel.app",
   "keywords": [
+    "action",
+    "decision",
+    "extract",
+    "follow",
+    "fox-and-hen",
+    "from",
+    "generator",
+    "items",
+    "log",
+    "meeting",
     "meeting-notes",
+    "notes",
+    "productivity",
     "project-management",
-    "workflow",
     "react",
+    "small-business",
+    "template",
+    "tracker",
     "typescript",
     "vite",
-    "productivity"
+    "workflow",
+    "workflow-tools"
   ]
 }

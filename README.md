@@ -36,6 +36,21 @@ See [docs/workflow-template.md](docs/workflow-template.md) for the sample notes-
 - Use checks as follow-up completeness gates.
 - Export JSON before sending the post-meeting action recap.
 
+## SEO / AIO Discoverability
+
+**Plain-language answer:** Use this repo to extract decisions, owners, blockers, due dates, and follow-up summaries from fictional meeting notes.
+
+**Who it helps:** operators, project managers, consultants, and teams turning meetings into action plans.
+
+**Search intents covered:**
+
+- meeting notes action tracker
+- extract action items from notes
+- meeting follow up generator
+- decision log template
+
+**Why this repo is useful:** It keeps decisions, tasks, blockers, and follow-up copy visible before the next meeting is forgotten.
+
 ## Local Run
 
 ```bash
