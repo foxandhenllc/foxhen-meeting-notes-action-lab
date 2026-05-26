@@ -21,5 +21,16 @@
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "Meeting notes action tracker for extracting decisions, owners, blockers, due dates, and follow-up summaries.",
+  "homepage": "https://foxhen-meeting-notes-action-lab.vercel.app",
+  "keywords": [
+    "meeting-notes",
+    "project-management",
+    "workflow",
+    "react",
+    "typescript",
+    "vite",
+    "productivity"
+  ]
 }

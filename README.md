@@ -9,6 +9,10 @@ Public Fox & Hen working sample for a **meeting-to-action workflow**.
 - Demo: [https://foxhen-meeting-notes-action-lab.vercel.app](https://foxhen-meeting-notes-action-lab.vercel.app)
 - Repository: [https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab](https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab)
 
+## Purpose
+
+Meeting notes action tracker for extracting decisions, owners, blockers, due dates, and follow-up summaries.
+
 ## What This Demo Is
 
 Meeting Notes Action Lab is a forkable React/Vite operating tool for teams that want to extract decisions, owners, blockers, deadlines, and executive summaries from fictional meeting notes. It is intentionally small, static, and public-safe so you can copy the pattern without inheriting a backend or vendor lock-in.
