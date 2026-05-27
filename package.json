@@ -23,7 +23,7 @@
     "node": ">=20"
   },
   "description": "Meeting notes action tracker for extracting decisions, owners, blockers, due dates, and follow-up summaries.",
-  "homepage": "https://foxhen-meeting-notes-action-lab.vercel.app",
+  "homepage": "https://freetoolsforpeople.com/meeting-notes-action-lab",
   "keywords": [
     "action",
     "decision",

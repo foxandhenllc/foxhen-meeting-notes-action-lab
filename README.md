@@ -6,7 +6,7 @@ Public Fox & Hen working sample for a **meeting-to-action workflow**.
 
 ## Live Demo
 
-- Demo: [https://foxhen-meeting-notes-action-lab.vercel.app](https://foxhen-meeting-notes-action-lab.vercel.app)
+- Demo: [https://freetoolsforpeople.com/meeting-notes-action-lab](https://freetoolsforpeople.com/meeting-notes-action-lab)
 - Repository: [https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab](https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab)
 
 ## Purpose

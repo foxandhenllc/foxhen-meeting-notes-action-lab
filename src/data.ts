@@ -40,7 +40,7 @@ export const sample: {
   "serviceLine": "Meeting-to-action workflow",
   "description": "Extract decisions, owners, blockers, deadlines, and executive summaries from fictional notes.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab",
-  "liveDemoUrl": "https://foxhen-meeting-notes-action-lab.vercel.app",
+  "liveDemoUrl": "https://freetoolsforpeople.com/meeting-notes-action-lab",
   "theme": {
     "accent": "#5a4d2d",
     "accent2": "#f1c65c",
